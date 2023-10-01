@@ -27,3 +27,7 @@ class FinalWin(QWidget):
 
     def set_appear(self):
         ''' встановлює, як виглядатиме вікно (напис, розмір, місце) '''
+        self.setWindowTitle(txt_title)
+        # TODO вствановити розмір вікна в pyqt
+        # TODO вствановити місце де вікно зявлятиметься в pyqt
+
