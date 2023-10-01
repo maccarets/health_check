@@ -19,6 +19,10 @@ class FinalWin(QWidget):
     
     def initUI(self):
        ''' створює графічні елементи '''
+       # TODO self.index_text = створити напис
+       # TODO self.result_text = створити напис
+
+        # TODO свтворити вертикальний лайоут і додати на нього створенні віджети
        
 
     def set_appear(self):
