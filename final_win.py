@@ -15,20 +15,20 @@ class FinalWin(QWidget):
         self.show()
 
     def initUI(self):
-        index_text = QLabel("Index Label", self)
-        result_text = QLabel("Result Label", self)
-        btn = QPushButton("Knopka", self)
+        index_text = QLabel(txt_index,)
+        result_text = QLabel(txt_workheart,)
 
         vbox = QVBoxLayout()
-        vbox.addWidget(index_text)
-        vbox.addWidget(result_text)
-        vbox.addWidget(btn)
+        vbox.addWidget(index_text,alignment=Qt.AlignCenter)
+        vbox.addWidget(result_text,alignment=Qt.AlignCenter)
+
 
         self.setLayout(vbox)
 
     def set_appear(self):
-        self.setWindowTitle('Test Window')
-        self.setGeometry(0, 0, 240, 120)
+        self.setWindowTitle(txt_finalwin)
+        self.resize(win_width, win_height)
+        self.move(win_x, win_y)
 
 app = QApplication([])
 window = FinalWin()

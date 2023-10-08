@@ -20,23 +20,21 @@ class MainWin(QWidget):
 
     def initUI(self):
         ''' створює графічні елементи '''
-        # TODO self.hello_text = створити напис
-        # TODO self.instruction = створити напис
-        # TODO self.button = створити кнопку
-        # TODO self.layout = створити лейаут
+        self.hello_text = QLabel(txt_hello)
+        self.instruction = QLabel(txt_instruction)
+        self.button = QPushButton(txt_next)
 
-        # приклад як додавати віджети self.layout.addWidget(self.hello_text)
+        self.layout=QVBoxLayout()
 
-        # TODO добавить виджет self.hello_text на self.layout
-        # TODO добавить виджет self.instruction на self.layout
-        # TODO добавить виджет self.button на self.layout
+        self.layout.addWidget(self.hello_text)
+        self.layout.addWidget(self.instruction)
+        self.layout.addWidget(self.button)
 
+        self.setLayout(self.layout)
     def set_appear(self):
-        ''' встановлює, як виглядатиме вікно (напис, розмір, місце) '''
-        self.setWindowTitle(txt_title)
-        # TODO вствановити розмір вікна в pyqt
-        # TODO вствановити місце де вікно зявлятиметься в pyqt
-
+        self.setWindowTitle(txt_finalwin)
+        self.resize(win_width, win_height)
+        self.move(win_x, win_y)
 
 
 app = QApplication([])
