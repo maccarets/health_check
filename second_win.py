@@ -7,7 +7,7 @@ from PyQt5.QtWidgets import (
 
 from instr import *
 from final_win import *
-
+#grbjdtbfv
 class TestWin(QWidget):
     def __init__(self):
         ''' вікно, в якому проводиться опитування '''
