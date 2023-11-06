@@ -6,7 +6,7 @@ from PyQt5.QtWidgets import (
         QPushButton, QLabel, QListWidget, QLineEdit)
         
 from instr import *
-
+#edited
 class FinalWin(QWidget):
     ''' вікно, в якому проводиться опитування '''
     def __init__(self):
